@@ -1,0 +1,55 @@
+/* ALERTS */
+#GesProAlert_Conteiner
+{
+    z-index: 1001;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    float: right;
+    clear: right;
+    width:auto;
+    height:auto;
+}
+
+.GesProAlert_Posiciona {
+    z-index: 1001;
+    position:fixed;
+    float: right;
+    clear: right;
+}
+
+.GesProAlert {
+    z-index: 1001;
+    margin:10px 0 0 0;
+    float: right;
+    clear: both;
+    line-height:80px;
+    padding:0 30px 0 30px;
+    border: 0px solid #999;
+    border-right:50px solid #999;
+    border-radius: 4px;
+    color: #000;
+}
+ .Div_Modal_Pivot_Estrutura {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: auto;
+        background-color: skyblue;
+        border-radius:25px;
+
+    }
+.Alert-Vermelho { background-color: #DA4453; }
+.Alert-Verde { background-color: #37BC9B; }
+.Alert-Azul { background-color: #4A89DC; }
+.Alert-Amarelo { background-color: #F6BB42; }
+.Alert-Laranja { background-color: #E9573F; }
+
+/* Formata a notificação de tela "alerts" */
+.Alert-Imagem { float:right; margin:21px -74px 0 0 ; width:38px; height:37px; }
+
+    .Alert-Atencao{ background:url('') center center repeat; }
+    .Alert-Dialogo{ background:url('') center center no-repeat; }
+    .Alert-Exclamacao{ background:url('') center center no-repeat; }
+    .Alert-Pergunta{ background:url('') center center no-repeat; }
+    .Alert-Sucesso { background: url('') center center no-repeat;  }

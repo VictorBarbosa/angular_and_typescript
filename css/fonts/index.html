@@ -1,0 +1,94 @@
+<html ng-app="app">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> </title>
+     
+      <link href="/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+      <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="/css/core.css" rel="stylesheet" type="text/css">
+      <link href="/css/components.css" rel="stylesheet" type="text/css">
+  
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+       <script type="text/javascript" src="scripts/core/app.js"></script>
+    
+ 
+       <script src="scripts/app.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="scripts/config/route-config.js"></script>
+      <script src="scripts/index.js"></script>
+    
+      <script src="scripts/services/unique.js"></script>
+      <script src="scripts/services/specificSearch.js"></script>
+      <script src="scripts/controllers/crudAngular/create.js"></script>
+      <script src="scripts/controllers/crudAngular/index.js"></script>
+      <script src="scripts/services/userService.js"></script>
+      <script src="scripts/factory/pass-param.js"></script>
+
+   </head>
+   <body  class="navbar-top  pace-done">
+      <div class="pace  pace-inactive">
+         <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+         </div>
+         <div class="pace-activity"></div>
+      </div>
+      <!-- Main navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img style="visibility: collapse;"  src="" alt=""></a>
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+               <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+               <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+         </div>
+         <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+               <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <!-- /main navbar -->
+      <!-- Page container -->
+      <div class="page-container" style="min-height:902px">
+      <!-- Page content -->
+      <div class="page-content">
+         <!-- Main sidebar -->
+         <div ng-controller="control" class="sidebar sidebar-main sidebar-fixed " style="z-index:900">
+            <div class="sidebar-content " style="overflow-y: hidden; outline: none;" tabindex="1">
+               <!-- /user menu -->
+               <!-- Main navigation -->
+               <div class="sidebar-category sidebar-category-visible">
+                  <div class="category-content no-padding">
+                     <ul class="navigation navigation-main navigation-accordion" style="margin-top:0px;padding-top:0px">
+                        <li class="navigation-header" style="background:#222;">
+                           <span>Main</span>
+                           <i class="icon-menu" title="" data-original-title="Main pages"></i>
+                        </li>
+                        <li><a href="/"><i class="icon-home4"></i> <span>Home</span></a></li>
+                        <!--  INICIO MENU-->
+                        <li>
+                           <a href="#" class="has-ul"><i class="icon-stack"></i> <span>Crud Using Angular</span></a>
+                           <ul class="hidden-ul">
+                             <li><a href="#/list">Index/List</a></li>
+                             <li><a href="#/create">Create/Edit</a></li>
+                              <li><a href="#/github">Source/Github</a></li>
+                           </ul>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content-wrapper">
+               <h1 style="margin-top:0%" class="text-center">A little sample using angularjs</h1>
+               <h1 style="margin-top:0%" class="text-center">Un petit exemple en utilisant angularjs</h1>
+              <div ng-view>             
+              </div>
+         </div>
+      </div>
+      </div>
+   </body>
